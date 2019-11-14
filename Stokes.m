@@ -1,4 +1,24 @@
 function [Hback,Hfoward]=Stokes(Trajectory,e,h,ToCompare)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Stokes Shift calculation
+%	INPUT:
+%	Trajectory      -Matrix of evolve sequences (M x L), every row
+%                    corresponds to a different evolutionary step.
+%		e           -Coupling matrix (qLxqL) formed from L x L submatrices
+%			         of size q x q with the pairwise couplings for each pair 
+%			         of sites (L submatrices in diagonal are irrelevant).
+%		h           -fields matrix (q x L) with the single site contributions
+%			         to the Hamiltonian.
+%		ToCompare 	-Index of generations to be compare to the first one in
+%                    the Trajectory variable.
+%	OUTPUT:
+%       Hback       -Vector of the hamiltonian back change.
+%       Hfoward     -Vector of the hamiltonian foward change.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
     tries=length(ToCompare);
     L=size(Trajectory,2);
     Hback=zeros(L,tries);
