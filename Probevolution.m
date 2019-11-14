@@ -28,12 +28,6 @@ function [Trajectory,sitecount,sustcount,symtimeline,Sustitutiontime,R]=Probevol
 %		R                  -Dispersion index vector (M/50 x 1) for the non-synonymous
 %                           substitutions along the sequence for an underlying
 %                           Poisson process of rate 10.
-%       Syn                -Matrix with step-stamps (M x L) marking the substitutions
-%                           simulation.
-%       Non_Syn            -Number of non-synonymous substitution every site
-%                    undergoes along the simulation
-%
-%
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
