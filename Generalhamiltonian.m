@@ -12,11 +12,11 @@ function H=Generalhamiltonian(Sequences,couplings,localfields,Htype,N1)
 %		localfields - Corresponding h fields matrix as returned
 %			      from the DCAparameters function of the DCA
 %			      framework.
-%		Htype 	    - Hamiltonian type: type 1 sums couplings over
-%			      pairs across two species while type 2
-%			      evaluates the complete Hamiltonian for the
-%			      complete sequence as in the traditional Potts
-%			      model.
+%		Htype 	    - Hamiltonian type:
+%                      Type 1: Sums couplings over
+%			                   pairs across two species while
+%                      Type 2: Evaluates the complete Potts
+%                              Hamiltonian
 %		N1 	    - Lenght of the first species. This number is
 %			      ignored in the Htype 2 case.
 %	OUTPUT:
