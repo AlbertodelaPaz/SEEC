@@ -9,7 +9,7 @@ function [Trajectory,sitecount,sustcount,symtimeline,Sustitutiontime,R]=Probevol
 %		e          - Coupling matrix (qLxqL) formed from L x L submatrices
 %			         of size q x q with the pairwise couplings for each pair 
 %			         of sites (L submatrices in diagonal are irrelevant).
-%		h          - h fields matrix (q x L) with the single site contributions
+%		h          - Local fields matrix (q x L) with the single site contributions
 %			         to the Hamiltonian.
 %
 %		M          - Number of evolutionary steps (Use multiples of 50).
