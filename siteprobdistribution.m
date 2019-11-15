@@ -1,6 +1,5 @@
 function [P]=siteprobdistribution(sequence,h,e,ms,type)
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Site probability distribution for evolution scripts
 %	INPUT:
