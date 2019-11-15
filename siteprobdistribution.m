@@ -1,5 +1,24 @@
 function [P]=siteprobdistribution(sequence,h,e,ms,type)
-    %ms=mutation site
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Site probability distribution for evolution scripts
+%	INPUT:
+%		S          - Complete sequence (1 x L) with an alphabet from 1 to q.
+%		e          - Coupling matrix (qLxqL) formed from L x L submatrices
+%			         of size q x q with the pairwise couplings for each pair 
+%			         of sites (L submatrices in diagonal are irrelevant).
+%		h          - h fields matrix (q x L) with the single site contributions
+%			         to the Hamiltonian.
+%		ms         - site to generate local probability distribution.
+%       type       - 1: Probability distribution
+%                    2: Cumulative probability distribution.
+%
+%	OUTPUTS:
+%		P          - Site probability distribution
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
     [q,N]=size(h);
     P=zeros(q,1);
     
