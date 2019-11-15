@@ -1,11 +1,7 @@
 # SEEC
 SEEC model library
 
-This library contains the script need to use the SEEC evolutionary model as described in:
-
-"Epistatic contributions promote the unification of incompatible models of neutral molecular evolution" Jose Alberto de la Paz, Charisse M. Nartey, Monisha Yuvaraj, Faruck Morcos. 
-
-Scripts are intended to be read using MATLAB. The library contains:
+This library contains the script need to use the SEEC evolutionary model. The library contains:
 
 Generalhamiltonian.m
 General Potts Hamiltonian
@@ -32,10 +28,7 @@ siteprobdistribution.m
 Site probability distribution for evolution scripts
 
 
-All of these codes are based on MATLAB. Below is one example for the basic analysis of lambda SEQRS data. 
-
-
-Any publication resulting from applications of SEEC should cite:
+All of these codes are based on MATLAB. Any publication resulting from applications of SEEC should cite:
 
 Jose Alberto de la Paz, Charisse M. Nartey, Monisha Yuvaraj, Faruck Morcos, Epistatic contributions promote the unification of incompatible models of neutral molecular evolution. Under revision.
 
